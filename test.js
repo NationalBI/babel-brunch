@@ -45,7 +45,7 @@ describe('Plugin', function() {
     plugin = new Plugin({
       paths: {root: '.'},
       plugins: {
-        babel: {presets: ['env']},
+        babel: {presets: ['@babel/preset-env']},
       },
     });
 
@@ -62,7 +62,7 @@ describe('Plugin', function() {
       plugins: {
         babel: {
           presets: [
-            ['env', {
+            ['@babel/preset-env', {
               modules: 'systemjs',
             }],
           ],

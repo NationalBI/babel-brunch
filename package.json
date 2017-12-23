@@ -28,9 +28,9 @@
     "index.js"
   ],
   "dependencies": {
+    "@babel/core": "^7.0.0-beta.35",
+    "@babel/preset-env": "^7.0.0-beta.35",
     "anymatch": "^1.0.0",
-    "babel-core": "^6.24.0",
-    "babel-preset-env": "^1.2.2",
     "loggy": "~1.0.1"
   },
   "devDependencies": {

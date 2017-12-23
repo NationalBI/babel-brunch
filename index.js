@@ -1,6 +1,6 @@
 'use strict';
 
-const babel = require('babel-core');
+const babel = require('@babel/core');
 const anymatch = require('anymatch');
 const logger = require('loggy');
 
@@ -72,7 +72,7 @@ class BabelCompiler {
         babelConfig.plugins && babelConfig.plugins.length;
 
       if (!hasConfig) {
-        this.options.presets = [['env', {
+        this.options.presets = [['@babel/preset-env', {
           targets: targetUglify() ? {uglify: true} : {},
         }]];
       }
